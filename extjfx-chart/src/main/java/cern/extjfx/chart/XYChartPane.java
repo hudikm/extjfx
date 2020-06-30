@@ -18,8 +18,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import com.sun.javafx.css.converters.BooleanConverter;
-import com.sun.javafx.css.converters.EnumConverter;
+import javafx.css.converter.BooleanConverter;
+import javafx.css.converter.EnumConverter;
 
 import cern.extjfx.chart.plugins.Panner;
 import cern.extjfx.chart.plugins.Zoomer;

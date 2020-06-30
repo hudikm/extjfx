@@ -13,6 +13,10 @@
 		<module>extjfx-samples</module>
 		<module>extjfx-test</module>
 	</modules>
+	<properties>
+		<maven.compiler.source>13</maven.compiler.source>
+		<maven.compiler.target>13</maven.compiler.target>
+	</properties>
 	<build>
 		<pluginManagement>
 			<plugins>
@@ -26,8 +30,9 @@
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<version>3.0.1</version>
 					<configuration>
+						<source>13</source>
 						<links>
-							<link>https://docs.oracle.com/javase/8/javafx/api</link>
+							<link>https://openjfx.io/javadoc/13/</link>
 						</links>
 					</configuration>
 					<executions>
@@ -45,6 +50,23 @@
 		<plugins>
 		</plugins>
 	</build>
+	<dependencies>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>14</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-fxml</artifactId>
+			<version>14</version>
+		</dependency>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-swing</artifactId>
+			<version>14</version>
+		</dependency>
+	</dependencies>
 	<organization>
 		<name>CERN</name>
 		<url>http://www.cern.ch</url>
